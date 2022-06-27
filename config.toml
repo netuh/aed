@@ -1,0 +1,151 @@
+# Hey, thanks for using my theme. If you like this theme,checkout my repo (https://gitlab.com/avron/gruvhugo"
+# and drop a star while you're at it. ;)
+baseurl = "https://netuh.github.io/aed/"
+title = "Algoritmo e Estrurura de Dados"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+#disqusShortname = "" # Enable comments by entering your Disqus shortname
+#googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+#-------------------------------------------------------------------------------
+# DEFAULT SETTINGS
+#-------------------------------------------------------------------------------
+
+# Default Theme
+theme = "gruvhugo"
+
+# Default Post Extension
+defaultExtension= "html"
+
+# Default metadata format for newly created frontmatter using
+# hugo new command. "toml", "yaml", or "json"
+metaDataFormat= "yaml"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params.main]
+  enabled = true
+  enableKatex = true
+  metaKeywords = "fast, hugo, theme, minimal, gruvbox"
+  headerTitle = "Algoritmo e Estrurura de Dados"
+  copyright = "© 2022 <a href=\"https://github.com/netuh/\">Prof. Waldemar Neto</a>."
+  name = "Waldemar Neto"
+  img = "img/logo.jpeg"
+  img_title = "Universidade Federal Rural de Pernambuco"
+  icon = "img/logo.jpeg"
+  quote = "Algorithms dont do a good job of detecting their own flaws. Clay Shirky"
+  description= "Ao término deste curso o aluno será capaz de compreender, implementar e utilizar as principais estuturas de dados e suas diferentes estratégias de organização de informação. <br> O aluno será capaz também de analisar a eficiência de algoritmos do ponto de vista assintótico. Em particular, essa análise tem como pano de fundo algoritmos de ordenação e operações básicas de diferentes estruturas de dados."
+  licenseUrl = ""
+
+ # Social icons
+ # [[params.social]]
+ #   name = "gitlab"
+ #   url  = "https://gitlab.com/avron/gruvhugo"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:waldemar.ferreira@ufrpe.br"
+
+  #[[params.social]]
+  #  name = "gpg"
+  #  url  = "https://keys.openpgp.org/"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/NetuhPires"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/netuh"
+
+  #[[params.social]]
+  #  name = "linkedin"
+  #  url  = "https://www.linkedin.com/"
+
+[params.style]
+  # add path to custom CSS files here
+  custom_css = []
+  # add path to custom SCSS files here
+  custom_scss = []
+
+[menu]
+  [[menu.main]]
+    identifier = "Conteudo"
+    weight = 100
+    name       = "Conteúdo"
+    url        = "conteudo"
+  
+  [[menu.main]]
+    identifier = "Horario"
+    weight = 200
+    name       = "Horário"
+    url        = "horario"
+
+  [[menu.main]]
+    identifier = "aulas"
+    name       = "Aulas"
+    url        = "post/"
+
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.asciidocExt]
+    backend = "html5"
+    docType = "article"
+    extensions = []
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = false
+    verbose = true
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
