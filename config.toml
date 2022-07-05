@@ -16,6 +16,8 @@ theme = "gruvhugo"
 # Default Post Extension
 defaultExtension= "html"
 
+enableEmoji = true
+
 # Default metadata format for newly created frontmatter using
 # hugo new command. "toml", "yaml", or "json"
 metaDataFormat= "yaml"
