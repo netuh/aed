@@ -47,3 +47,17 @@ $$ f(n) = c_1 + (c_2+ c_3 + c_4 + c_5) * 5 + c_6 $$
 $$ f(n) = 1 + (4) * 5 + 1 $$
 
 $$ f(n) = 22 $$
+
+## Exercício
+
+Faça a análise assintótica do seguinte algoritmo.
+
+```java
+public boolean contemDuplicacao(int[] v) {
+    for (int i = 0; i < v.length; i++)
+        for (int j = i + 1; j < v.length; j++)
+            if (v[i] == v[j])
+                return true;
+    return false;
+}
+```
