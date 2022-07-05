@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algoritmo e Estrurura de Dados</title><link>https://netuh.github.io/aed/</link><description>Recent posts from on Algoritmo e Estrurura de Dados</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://netuh.github.io/aed/index.xml" rel="self" type="application/rss+xml"/><item><title>Boas vindas</title><link>https://netuh.github.io/aed/post/aula01/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://netuh.github.io/aed/post/aula01/</guid><description>&lt;h2 id="sejam-bem-vindos">Sejam bem-vindos,&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algoritmo e Estrurura de Dados</title><link>https://netuh.github.io/aed/</link><description>Recent posts from on Algoritmo e Estrurura de Dados</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://netuh.github.io/aed/index.xml" rel="self" type="application/rss+xml"/><item><title>Análise assintótica</title><link>https://netuh.github.io/aed/post/aula03/</link><pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate><guid>https://netuh.github.io/aed/post/aula03/</guid><description>&lt;h2 id="análise-assintótica">Análise Assintótica&lt;/h2>
+&lt;p>A análise assintótica de um algoritmo refere-se à definição do &lt;strong>limite/enquadramento&lt;/strong> matemático de seu desempenho em tempo de execução. Usando a análise assintótica, podemos definir o melhor caso, o caso médio e o pior cenário de um algoritmo.&lt;/p>
+&lt;p>Um exemplo que foi analisado é o seguinte:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Main&lt;/span>&lt;span style="color:#f92672">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">encontra&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">[]&lt;/span> var&lt;span style="color:#f92672">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> 0&lt;span style="color:#f92672">;&lt;/span> i &lt;span style="color:#f92672">&amp;lt;&lt;/span> 5&lt;span style="color:#f92672">;&lt;/span> i&lt;span style="color:#f92672">++){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>var&lt;span style="color:#f92672">[&lt;/span>i&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">==&lt;/span> 5&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> 0&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">-&lt;/span>1&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Lembrando que a linha primeira linha do método &lt;strong>encontra&lt;/strong>:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Id&lt;/th>
+&lt;th>Comandos&lt;/th>
+&lt;th>Primitivas&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>for (int i = 0; i &amp;lt; 5; i++){&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>c1&lt;/td>
+&lt;td>int i = 0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>c2&lt;/td>
+&lt;td>i &amp;lt; 5&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>c3&lt;/td>
+&lt;td>i++&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>if (var[i] == 5)&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>c4&lt;/td>
+&lt;td>var[i]&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>c5&lt;/td>
+&lt;td>var[i] == 5&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>c6&lt;/td>
+&lt;td>return 0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>c7&lt;/td>
+&lt;td>return -1&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Fazendo o somatório, seria:&lt;/p>
+&lt;p>$$ f(n) = c_1 + (c_2+ c_3 + c_4 + c_5) * 5 + c_6 $$&lt;/p>
+&lt;p>$$ f(n) = 1 + (4) * 5 + 1 $$&lt;/p>
+&lt;p>$$ f(n) = 22 $$&lt;/p></description></item><item><title>Orientação a Objetos</title><link>https://netuh.github.io/aed/post/aula02/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><guid>https://netuh.github.io/aed/post/aula02/</guid><description>&lt;h2 id="orientação-a-objetos">Orientação a Objetos&lt;/h2>
+&lt;p>A programação orientada a objetos (POO) é um paradigma de programação baseado no conceito de &lt;strong>objetos&lt;/strong>, onde os &lt;strong>objetos&lt;/strong> são instâncias de &lt;strong>classes&lt;/strong>. Classes contêm &lt;strong>dados&lt;/strong> e &lt;strong>comportamentos&lt;/strong>: &lt;strong>dados&lt;/strong> na forma de campos (geralmente conhecidos como atributos ou propriedades) e &lt;strong>comportamento&lt;/strong> na forma de &lt;strong>funções&lt;/strong> (muitas vezes conhecido como &lt;strong>métodos&lt;/strong>).&lt;/p>
+&lt;p>Exemplo, um código que calcula a distância entre dois pontos.&lt;/p>
+&lt;p>&lt;img src="https://netuh.github.io/aed/aed/img/dist.png" alt="formula" title="Distância entre dois pontos">.&lt;/p>
+&lt;p>Como sabemos, de acordo com fórmula:&lt;/p>
+&lt;p>$$y = \sqrt[2]{(x_1-x_2)^2+(y_1-y_2)^2}$$&lt;/p>
+&lt;h2 id="orientação-a-objetos-1">Orientação a Objetos&lt;/h2>
+&lt;p>Inicialmente temos que implementar a classe que representa um ponto, com um arquivo chamado &lt;strong>Ponto.java&lt;/strong>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Ponto&lt;/span>&lt;span style="color:#f92672">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">float&lt;/span> x&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">float&lt;/span> y&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">Ponto&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">float&lt;/span> x&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span> y&lt;span style="color:#f92672">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">x&lt;/span> &lt;span style="color:#f92672">=&lt;/span> x&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">y&lt;/span> &lt;span style="color:#f92672">=&lt;/span> y&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span> &lt;span style="color:#a6e22e">getX&lt;/span>&lt;span style="color:#f92672">(){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> x&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span> &lt;span style="color:#a6e22e">getY&lt;/span>&lt;span style="color:#f92672">(){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> y&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">distanciaCoord&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">float&lt;/span> x2&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span> y2&lt;span style="color:#f92672">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">float&lt;/span> dist_x &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">x&lt;/span> &lt;span style="color:#f92672">-&lt;/span> x2&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">x&lt;/span> &lt;span style="color:#f92672">-&lt;/span> x2&lt;span style="color:#f92672">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">float&lt;/span> dist_y &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">y&lt;/span> &lt;span style="color:#f92672">-&lt;/span> y2&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">y&lt;/span> &lt;span style="color:#f92672">-&lt;/span> y2&lt;span style="color:#f92672">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">double&lt;/span> d &lt;span style="color:#f92672">=&lt;/span> Math&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">sqrt&lt;/span>&lt;span style="color:#f92672">(&lt;/span>dist_x &lt;span style="color:#f92672">+&lt;/span> dist_y&lt;span style="color:#f92672">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> d&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">distanciaPonto&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Ponto p2&lt;span style="color:#f92672">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">float&lt;/span> dist_x &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">x&lt;/span> &lt;span style="color:#f92672">-&lt;/span> p2&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getX&lt;/span>&lt;span style="color:#f92672">())&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">x&lt;/span> &lt;span style="color:#f92672">-&lt;/span> p2&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getX&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">float&lt;/span> dist_y &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">y&lt;/span> &lt;span style="color:#f92672">-&lt;/span> p2&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getY&lt;/span>&lt;span style="color:#f92672">())&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">y&lt;/span> &lt;span style="color:#f92672">-&lt;/span> p2&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getY&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">double&lt;/span> d &lt;span style="color:#f92672">=&lt;/span> Math&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">sqrt&lt;/span>&lt;span style="color:#f92672">(&lt;/span>dist_x &lt;span style="color:#f92672">+&lt;/span> dist_y&lt;span style="color:#f92672">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> d&lt;span style="color:#f92672">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>E a classe principal que executa o código principal com arquivo &lt;strong>Main.java&lt;/strong>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Main&lt;/span>&lt;span style="color:#f92672">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">[]&lt;/span> args&lt;span style="color:#f92672">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Ponto p1 &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Ponto&lt;span style="color:#f92672">(&lt;/span>1&lt;span style="color:#f92672">,&lt;/span>2&lt;span style="color:#f92672">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Ponto p1 &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Ponto&lt;span style="color:#f92672">(&lt;/span>4&lt;span style="color:#f92672">,&lt;/span>5&lt;span style="color:#f92672">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">double&lt;/span> d &lt;span style="color:#f92672">=&lt;/span> p&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">distancia&lt;/span>&lt;span style="color:#f92672">(&lt;/span>p2&lt;span style="color:#f92672">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>d&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Boas vindas</title><link>https://netuh.github.io/aed/post/aula01/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://netuh.github.io/aed/post/aula01/</guid><description>&lt;h2 id="sejam-bem-vindos">Sejam bem-vindos,&lt;/h2>
 &lt;p>Aqui vou publicar os exercícios e as aulas. Mas não se esqueçam do que Steve Jobs disse:&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;Computers themselves, and software yet to be developed, will revolutionize the way we learn.&amp;rdquo;&lt;/p>
