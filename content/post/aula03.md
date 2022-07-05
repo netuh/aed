@@ -27,17 +27,17 @@ public class Main{
 Lembrando que a linha primeira linha do método **encontra**:
 
 
-| Id | Comandos                     | Primitivas |
-|----|------------------------------|------------|
-|    | for (int i = 0; i < 5; i++){ |            |
-| c1 | int i = 0                    | 1          |
-| c2 | i < 5                        | 1          |
-| c3 | i++                          | 2          |
-|    | if (var[i] == 5)             |            |
-| c4 | var[i]                       | 1          |
-| c5 | var[i] == 5                  | 1          |
-| c6 | return 0                     | 1          |
-| c7 | return -1                    | 1          |
+| Identificador | Comandos                     | Primitivas |
+|:--------------|------------------------------|:------------:|
+|               | for (int i = 0; i < 5; i++){ |            |
+| **c1**        | int i = 0                    | 1          |
+| **c2**        | i < 5                        | 1          |
+| **c3**        | i++                          | 2          |
+|               | if (var[i] == 5)             |            |
+| **c4**        | var[i]                       | 1          |
+| **c5**        | var[i] == 5                  | 1          |
+| **c6**        | return 0                     | 1          |
+| **c7**        | return -1                    | 1          |
 
 
 Fazendo o somatório, seria:
