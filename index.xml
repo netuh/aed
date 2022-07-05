@@ -15,56 +15,56 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Id&lt;/th>
+&lt;th style="text-align:left">Identificador&lt;/th>
 &lt;th>Comandos&lt;/th>
-&lt;th>Primitivas&lt;/th>
+&lt;th style="text-align:center">Primitivas&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
 &lt;td>for (int i = 0; i &amp;lt; 5; i++){&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>c1&lt;/td>
+&lt;td style="text-align:left">&lt;strong>c1&lt;/strong>&lt;/td>
 &lt;td>int i = 0&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td style="text-align:center">1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>c2&lt;/td>
+&lt;td style="text-align:left">&lt;strong>c2&lt;/strong>&lt;/td>
 &lt;td>i &amp;lt; 5&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td style="text-align:center">1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>c3&lt;/td>
+&lt;td style="text-align:left">&lt;strong>c3&lt;/strong>&lt;/td>
 &lt;td>i++&lt;/td>
-&lt;td>2&lt;/td>
+&lt;td style="text-align:center">2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
 &lt;td>if (var[i] == 5)&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>c4&lt;/td>
+&lt;td style="text-align:left">&lt;strong>c4&lt;/strong>&lt;/td>
 &lt;td>var[i]&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td style="text-align:center">1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>c5&lt;/td>
+&lt;td style="text-align:left">&lt;strong>c5&lt;/strong>&lt;/td>
 &lt;td>var[i] == 5&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td style="text-align:center">1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>c6&lt;/td>
+&lt;td style="text-align:left">&lt;strong>c6&lt;/strong>&lt;/td>
 &lt;td>return 0&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td style="text-align:center">1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>c7&lt;/td>
+&lt;td style="text-align:left">&lt;strong>c7&lt;/strong>&lt;/td>
 &lt;td>return -1&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td style="text-align:center">1&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
