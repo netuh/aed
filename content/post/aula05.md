@@ -1,7 +1,7 @@
 +++
 author = "Waldemar Ferreira"
 title = "Estrutura de Dados"
-date = "2022-07-21"
+date = "2022-07-28"
 description = "Pilha e Fila"
 +++
 
@@ -17,7 +17,67 @@ Como as políticas de inserção e remoção são pré-definidas, para esse tipo
 * Restringir a inserção ao procedimento INSERT e a remoção ao procedimento REMOVELAST
 * Restringir a inserção ao procedimento APPEND (inclui no final) e a remoção ao procedimento REMOVEFIRST.
 
-#### Fila Fnterface
+#### Fila Interface
+
+```java
+public interface Fila {
+    public boolean isEmpty();
+    public boolean seach(int value);
+    public void enqueue(int value);
+    public int dequeue();
+}
+```
+
+#### Fila com Lista Ligada
+
+```java
+public class FilaLinked implements Fila {
+    private No head;
+
+    @Override
+    public boolean isEmpty() {
+        return head == null;
+    }
+
+    @Override
+    public boolean seach(int value) {
+        if (head.getValor() == value){
+            return true;
+        }
+        No n = head;
+        while(n.getProximo() != null){
+            n = n.getProximo();
+            if (n.getValor() == value){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public void enqueue(int value) {
+        if (head == null) {
+            head = new No(value);
+            return;
+        }
+        No n = head;
+        while (n.getProximo() != null) {
+            n = n.getProximo();
+        }
+        No novo = new No(value);
+        n.setProximo(novo);
+    }
+
+    @Override
+    public int dequeue() {
+        int valor = head.getValor();
+        head = head.getProximo();
+        return valor;
+    }
+}
+```
+
+A implementação com Array é Exercícios.
 
 ### Pilha
 
