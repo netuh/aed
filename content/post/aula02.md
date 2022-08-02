@@ -69,3 +69,9 @@ public class Main{
     }
 }
 ```
+
+## Material Extra
+
+Uma lista de vídeos que eu recomendo sobre o assunto está disponível no youtube:
+
+*[Curso Java OO](https://www.youtube.com/playlist?list=PLGPluF_nhP9oNl6vAwapJNqkWA8_CxRuy)*

@@ -61,3 +61,8 @@ public boolean contemDuplicacao(int[] v) {
     return false;
 }
 ```
+
+## Material Extra
+
+
+[Aula do Prof João Brunet](https://www.youtube.com/watch?v=uaVHeEXpBS8)
