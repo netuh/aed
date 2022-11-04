@@ -1,7 +1,7 @@
 +++
 title = "Conteúdo"
 description = "Descrição do conteúdo da disciplina"
-date = "2019-02-28"
+date = "2022-11-04"
 aliases = ["conteudo"]
 author = "Waldemar Ferreira"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Horário"
 description = "Horários da disciplina"
-date = "2019-02-28"
+date = "2022-11-04"
 aliases = ["horario"]
 author = "Waldemar Ferreira"
 +++
@@ -11,8 +11,11 @@ author = "Waldemar Ferreira"
 
 * **Professor**: Waldemar Pires Ferreira **Neto**
 * **Horários**:
- * **Terça-feira**: 8h-10h
+ * **Quarta-feira**: 8h-10h
  * **Quinta-feira**: 8h-10h
- * [Link para o calendário](https://calendar.google.com/calendar/embed?src=c_classroomb650f171%40group.calendar.google.com&ctz=America%2FRecife)
-* **Local**: AEB-7
+ * [Link para o calendário no Google Agenda](https://calendar.google.com/calendar/u/2?cid=Y19jbGFzc3Jvb204YzYwNWFkZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
+* **Sala**: ????
 
+<div>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_classroom8c605adf%40group.calendar.google.com&ctz=America%2FRecife" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
