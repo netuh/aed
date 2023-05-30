@@ -1,8 +1,8 @@
 +++
 author = "Waldemar Ferreira"
-title = "Boas vindas"
-date = "2023-05-30"
-description = "Boas vindas aos alunos de 2021.2"
+title = "Aula 1 -Boas vindas"
+date = "2023-03-05"
+description = "Boas vindas aos alunos de 2022.2"
 +++
 
 ## Sejam bem-vindos,
